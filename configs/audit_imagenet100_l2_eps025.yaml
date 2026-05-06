@@ -1,0 +1,36 @@
+dataset:
+  name: imagenet100
+  note: user-provided inputs following the dataset license
+attack:
+  norm: l2
+  epsilon: 0.25
+  objective: fixed_competitor_pairwise_margin
+  step_size_factors:
+    - 0.25
+    - 0.10
+  budgets:
+    one_restart_triage:
+      steps: 10
+      restarts_per_step_size: 1
+    canonical_shallow:
+      steps: 10
+      restarts_per_step_size: 5
+    analytical:
+      steps: 50
+      restarts_per_step_size: 10
+    deep:
+      steps: 200
+      restarts_per_step_size: 5
+    diagnostic_deep:
+      steps: 500
+      restarts_per_step_size: 5
+coordinate_fields:
+  clean_margin: M
+  first_order_scale: Lp
+  one_step_drop: D_fgsm
+  iterative_drop: D_pgd
+  margin_slack: lambda
+  on_ray_shortfall: kappa
+  off_ray_drift: rho
+  scalar_residual: tau
+  survival_margin: m

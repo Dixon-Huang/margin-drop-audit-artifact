@@ -1,0 +1,5 @@
+analysis,spearman,p,n,placement
+pairwise rho10 predicts CE/APGD top1 collapse,0.8325836201288263,8.138333241863234e-12,42,appendix/main validation matrix candidate
+top1 endpoint R10 predicts top1 collapse,0.0606773558288102,0.7026698012021408,42,appendix contrast
+pairwise tau10 predicts CE/APGD top1 collapse,-0.0288551176758043,0.8560561997992561,42,appendix contrast
+dynamic all-class coordinate recomputation,,,0,blocked: no all-class coordinate records found

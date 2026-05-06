@@ -1,0 +1,88 @@
+{
+  "canonical_l2_rho10_vs_collapse": {
+    "n": 42,
+    "p_value": 7.299223203480451e-11,
+    "predictor": "bar_rho10",
+    "rho": 0.8111984442103558,
+    "target": "delta_R_10_200"
+  },
+  "canonical_linf_rho10_vs_collapse_eps_0.375_255": {
+    "n": 42,
+    "p_value": 3.3976882505972336e-11,
+    "rho": 0.8189773924317317
+  },
+  "ce_apgd_top1_collapse_vs_pairwise_rho10": {
+    "n": 42,
+    "p_value": 8.138333241863234e-12,
+    "predictor": "bar_rho10",
+    "rho": 0.8325836201288263,
+    "target": "delta_R_top1_10_100"
+  },
+  "cross_norm_rho_rank_consistency": [
+    {
+      "bootstrap_ci_high": 0.9547420684388356,
+      "bootstrap_ci_low": 0.7876980992662174,
+      "linf_eps": 0.0009803921568627,
+      "linf_label": "0.25/255",
+      "linf_tag": "eps025centi_255",
+      "missing_count": 0,
+      "n": 42,
+      "p": 3.052224644960785e-16,
+      "source": "linf_sweetspot",
+      "spearman": 0.9027631472328012
+    },
+    {
+      "bootstrap_ci_high": 0.9865292542400388,
+      "bootstrap_ci_low": 0.9259680168844876,
+      "linf_eps": 0.0014705882352941,
+      "linf_label": "0.375/255",
+      "linf_tag": "eps038centi_255",
+      "missing_count": 0,
+      "n": 42,
+      "p": 1.0276674366863535e-26,
+      "source": "linf_sweetspot",
+      "spearman": 0.9718013126975124
+    },
+    {
+      "bootstrap_ci_high": 0.965564920068938,
+      "bootstrap_ci_low": 0.8592204116245092,
+      "linf_eps": 0.0019607843137254,
+      "linf_label": "0.5/255",
+      "linf_tag": "eps050centi_255",
+      "missing_count": 0,
+      "n": 42,
+      "p": 2.424636877152557e-19,
+      "source": "linf_sweetspot",
+      "spearman": 0.932906571590633
+    },
+    {
+      "bootstrap_ci_high": 0.894003373679963,
+      "bootstrap_ci_low": 0.6506904955320878,
+      "linf_eps": 0.0029411764705882,
+      "linf_label": "0.75/255",
+      "linf_tag": "eps075centi_255",
+      "missing_count": 0,
+      "n": 42,
+      "p": 8.263150663461137e-11,
+      "source": "linf_sweetspot",
+      "spearman": 0.8099019528401264
+    },
+    {
+      "bootstrap_ci_high": 0.7726390275987834,
+      "bootstrap_ci_low": 0.3981048678489207,
+      "linf_eps": 0.0039215686274509,
+      "linf_label": "1/255",
+      "linf_tag": "eps100centi_255_old",
+      "missing_count": 0,
+      "n": 42,
+      "p": 1.071328275688673e-05,
+      "source": "linf_imagenet100_old",
+      "spearman": 0.6225589498419902
+    }
+  ],
+  "heldout_l2_rho10_vs_collapse": {
+    "n": 11,
+    "p_value": 0.0003301688021839006,
+    "rho": 0.881818181818182
+  }
+}

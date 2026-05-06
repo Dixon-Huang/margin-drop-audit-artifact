@@ -1,0 +1,17 @@
+dataset:
+  name: imagenet100
+  features: user_provided
+head:
+  type: linear
+  loss: cross_entropy
+optimizer:
+  name: adamw
+  lr: 0.001
+  weight_decay: 0.0
+training:
+  epochs: 100
+  batch_size: 1024
+  seed: 42
+notes:
+  - Frozen encoder features are expected as NPZ arrays with `features` and `labels`.
+  - Raw images and pretrained checkpoints are not included in this package.

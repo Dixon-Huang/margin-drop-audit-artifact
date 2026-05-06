@@ -1,0 +1,22 @@
+item,required_for,available,path,notes
+ImageNet-100 split,checklist Q5/Q13,true,data/imagenet100_class_split.csv,Sample and class identifiers only; raw images not included.
+ImageNet-100 class IDs,checklist Q5/Q13,true,data/imagenet100_class_ids.txt,The 100 class identifiers used by the audit records.
+Encoder identifiers and sources,appendix pool and checklist Q12,true,data/encoder_pool.csv,Includes source package and relative checkpoint pattern.
+Per-sample coordinate schema,section 4.3 and checklist Q13,true,schemas/per_sample_record.md,Documents M Lp D_FGSM D_PGD and derived coordinates.
+Per-encoder summary schema,checklist Q13,true,schemas/per_encoder_summary.md,Documents retention collapse and coordinate summaries.
+Canonical L2 per-sample records,checklist Q4/Q5,true,records/canonical_l2/per_sample_coordinates.csv.gz,Includes PGD-10 and PGD-200 fields plus additional budgets when available.
+Canonical L2 per-encoder summaries,appendix pool and checklist Q4/Q5,true,records/canonical_l2/per_encoder_summary.csv,42-encoder pool summaries.
+Held-out L2 records,held-out validation,true,records/heldout_l2/,Per-sample and per-encoder held-out tables.
+Canonical Linf records,appendix Linf,true,records/canonical_linf/,Per-encoder summaries, raw JSON records, radius sweep, and cross-norm tables.
+PGD500 records,appendix deep-reference,true,records/pgd500/,Canonical records with PGD-500 fields retained.
+CE/APGD top1 records,appendix CE/APGD,true,records/ce_apgd/,42 raw JSON records plus per-encoder summary.
+Perturbation-vector geometry records,appendix off-ray geometry,true,records/perturbation_vectors/,600-sample geometry summaries and per-sample geometry table.
+Intervention tabular records,appendix intervention,true,records/intervention/intervention_records.csv,Paper-facing intervention cells only.
+Head training script,checklist Q4,true,scripts/train_linear_head.py,Feature-table based linear-head training template.
+PGD audit script,checklist Q4,true,scripts/run_audit.py,Model-builder and data-builder based audit script.
+Coordinate derivation script,checklist Q4,true,scripts/compute_coordinates.py,Converts raw margin records to coordinate rows.
+Intervention evaluation script,checklist Q4,true,scripts/run_intervention.py,Summarizes packaged intervention records.
+Figure reproduction script,checklist Q4/Q13,true,scripts/generate_figures.py,Regenerates example figure panels from packaged records.
+Reported statistics script,checklist Q5,true,scripts/compute_statistics.py,Recomputes headline Spearman statistics from records.
+Compute resources,checklist Q8,true,manifests/compute_resources.md,Resource classes and reproducibility notes.
+License notes,checklist Q12,true,LICENSE and data/model_sources_and_licenses.md,Raw datasets and checkpoints are not redistributed.

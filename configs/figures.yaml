@@ -1,0 +1,22 @@
+style:
+  blue: "#1f5fbf"
+  orange: "#f28e2b"
+  red: "#d62728"
+  gray: "#6b6b6b"
+  light_gray: "#e6e6e6"
+  font_size: 8
+outputs:
+  dpi: 400
+  formats:
+    - pdf
+    - png
+figures:
+  collapse_scatter:
+    x: bar_rho10
+    y: delta_R_10_200
+  endpoint_null:
+    x: R10
+    y: delta_R_10_200
+  coordinate_plane:
+    x: bar_kappa
+    y: bar_rho10

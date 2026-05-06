@@ -1,0 +1,30 @@
+l2:
+  epsilon: 0.25
+  step_size_factors:
+    - 0.25
+    - 0.10
+  random_start: true
+  clip_min: 0.0
+  clip_max: 1.0
+linf:
+  operating_epsilon: 0.0014705882352941176
+  operating_epsilon_label: 0.375/255
+  sweep_epsilons:
+    - 0.000980392156862745
+    - 0.0014705882352941176
+    - 0.00196078431372549
+    - 0.0029411764705882353
+    - 0.00392156862745098
+  budgets:
+    shallow:
+      steps: 10
+      restarts_per_step_size: 5
+    deep:
+      steps: 100
+      restarts_per_step_size: 5
+  random_start: true
+  clip_min: 0.0
+  clip_max: 1.0
+endpoint_convention:
+  include_one_step_endpoint: true
+  selection_rule: largest_drop_in_fixed_competitor_margin

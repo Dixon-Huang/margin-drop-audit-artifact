@@ -1,0 +1,43 @@
+encoder,family
+clip_rn101,CLIP / multimodal
+clip_rn50,CLIP / multimodal
+clip_vit_l14,CLIP / multimodal
+clip_vitb16,CLIP / multimodal
+convnext_base,ConvNeXt
+convnext_large,ConvNeXt
+convnext_small,ConvNeXt
+convnext_tiny,ConvNeXt
+deit3_large_patch16_224,Supervised ViT / DeiT / DeiT3
+deit3_medium_patch16_224,Supervised ViT / DeiT / DeiT3
+deit3_small_patch16_224,Supervised ViT / DeiT / DeiT3
+deit3_vitb16,Supervised ViT / DeiT / DeiT3
+deit_base_patch16_224,Supervised ViT / DeiT / DeiT3
+deit_small_patch16_224,Supervised ViT / DeiT / DeiT3
+deit_tiny,Supervised ViT / DeiT / DeiT3
+densenet121,EfficientNet / DenseNet / MobileNet / Mixer
+densenet201,EfficientNet / DenseNet / MobileNet / Mixer
+dino_resnet50,Self-supervised DINO / DINOv2
+dino_vitb16,Self-supervised DINO / DINOv2
+dino_vitb8,Self-supervised DINO / DINOv2
+dino_vits16,Self-supervised DINO / DINOv2
+dinov2_vitb14,Self-supervised DINO / DINOv2
+dinov2_vitl14,Self-supervised DINO / DINOv2
+dinov2_vits14,Self-supervised DINO / DINOv2
+efficientnet_b0,EfficientNet / DenseNet / MobileNet / Mixer
+efficientnet_b1,EfficientNet / DenseNet / MobileNet / Mixer
+efficientnet_b3,EfficientNet / DenseNet / MobileNet / Mixer
+mixer_b16_224,EfficientNet / DenseNet / MobileNet / Mixer
+mobilenetv3_large_100,EfficientNet / DenseNet / MobileNet / Mixer
+resnet101,ResNet / Wide-ResNet
+resnet152,ResNet / Wide-ResNet
+resnet18,ResNet / Wide-ResNet
+resnet34,ResNet / Wide-ResNet
+resnet50_timm,ResNet / Wide-ResNet
+swin_base_patch4_window7_224,Swin / SwinV2
+swin_small_patch4_window7_224,Swin / SwinV2
+swin_tiny_patch4_window7_224,Swin / SwinV2
+swinv2_tiny_window8_256,Swin / SwinV2
+vit_base_patch16_224,Supervised ViT / DeiT / DeiT3
+vit_small_patch16_224,Supervised ViT / DeiT / DeiT3
+vit_tiny_patch16_224,Supervised ViT / DeiT / DeiT3
+wide_resnet50_2,ResNet / Wide-ResNet

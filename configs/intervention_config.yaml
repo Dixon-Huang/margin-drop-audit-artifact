@@ -1,0 +1,22 @@
+interventions:
+  lora_llr:
+    lora_rank: 4
+    inner_attack_steps: 10
+    objective: local_linearity_regularization
+  coord_targeted:
+    lora_rank: 4
+    inner_attack_steps: 10
+    alpha: 0.1
+    beta: 1.0
+    gamma: 1.0
+    eta_kappa: 0.05
+    eta_lambda: 0.05
+evaluation:
+  coordinate_budget: PGD-50x10
+  closure_budgets:
+    - PGD-10x5
+    - PGD-50x10
+    - PGD-200x5
+notes:
+  - This file records the paper-facing intervention configuration.
+  - Checkpoints are not redistributed.
