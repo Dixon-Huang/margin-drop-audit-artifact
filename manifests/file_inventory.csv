@@ -1,6 +1,6 @@
 path,size_bytes
 LICENSE,1622
-README.md,5018
+README.md,5322
 configs/attacks.yaml,652
 configs/audit_imagenet100_l2_eps025.yaml,783
 configs/figures.yaml,342
@@ -13,6 +13,7 @@ data/imagenet100_class_split.csv,18810
 data/model_sources_and_licenses.md,1139
 manifests/compute_resources.md,1153
 manifests/data_inventory.csv,2796
+manifests/file_inventory.csv,16
 manifests/recomputed_statistics.json,2494
 records/canonical_l2/per_encoder_summary.csv,30070
 records/canonical_l2/per_sample_coordinates.csv.gz,11354321

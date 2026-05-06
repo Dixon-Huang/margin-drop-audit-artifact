@@ -49,24 +49,34 @@ create dependency-conflict warnings outside this package.
 
 ## Main Reproduction Commands
 
+Set the artifact root once before running commands:
+
+```bash
+# Use this when the archive has been unpacked inside a parent directory.
+export ARTIFACT_ROOT=supplementary
+
+# Use this instead when this README is already at the repository root.
+# export ARTIFACT_ROOT=.
+```
+
 Install dependencies:
 
 ```bash
-pip install -r supplementary/requirements.txt
+pip install -r "$ARTIFACT_ROOT/requirements.txt"
 ```
 
 Verify the headline statistics from the packaged tables:
 
 ```bash
-python supplementary/scripts/compute_statistics.py \
-  --records-root supplementary/records \
-  --out supplementary/manifests/recomputed_statistics.json
+python "$ARTIFACT_ROOT/scripts/compute_statistics.py" \
+  --records-root "$ARTIFACT_ROOT/records" \
+  --out "$ARTIFACT_ROOT/manifests/recomputed_statistics.json"
 ```
 
 Generate coordinate rows from a stored audit JSON:
 
 ```bash
-python supplementary/scripts/compute_coordinates.py \
+python "$ARTIFACT_ROOT/scripts/compute_coordinates.py" \
   --input-json audit_records.json \
   --out coordinate_records.csv
 ```
@@ -78,7 +88,7 @@ The converter accepts either the canonical margin keys
 Run a fixed-competitor audit with user-provided model and dataloader builders:
 
 ```bash
-python supplementary/scripts/run_audit.py \
+python "$ARTIFACT_ROOT/scripts/run_audit.py" \
   --model-builder user_builders:build_model \
   --data-builder user_builders:build_loader \
   --eps 0.25 \
@@ -90,7 +100,7 @@ python supplementary/scripts/run_audit.py \
 Train a linear head from stored feature tensors:
 
 ```bash
-python supplementary/scripts/train_linear_head.py \
+python "$ARTIFACT_ROOT/scripts/train_linear_head.py" \
   --train-features train_features.npz \
   --val-features val_features.npz \
   --out linear_head.pt
@@ -99,16 +109,16 @@ python supplementary/scripts/train_linear_head.py \
 Regenerate example figure panels from the packaged records:
 
 ```bash
-python supplementary/scripts/generate_figures.py \
-  --records-root supplementary/records \
+python "$ARTIFACT_ROOT/scripts/generate_figures.py" \
+  --records-root "$ARTIFACT_ROOT/records" \
   --out-dir reproduced_figures
 ```
 
 Summarize the packaged intervention records:
 
 ```bash
-python supplementary/scripts/run_intervention.py \
-  --records supplementary/records/intervention/intervention_records.csv \
+python "$ARTIFACT_ROOT/scripts/run_intervention.py" \
+  --records "$ARTIFACT_ROOT/records/intervention/intervention_records.csv" \
   --out intervention_summary.json
 ```
 
